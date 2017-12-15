@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://legendofada.eu/scripts/session.js"></script>
+	<script src="http://legendofada.eu/scripts/login.js"></script>
+	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; script-src * ; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
+    -->	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="login" onload="wake()">
+<header>
+	<p>
+		<a href="index.html">Menu Principal</a>
+		<img src="images/arrow.png" alt=">"></img>
+		<a href="login.html">Login</a>
+	</p>
+	<p id="user"></p>
+</header>
+<form action="index.html" onsubmit="return login()">
+	<h3>Connexion</h3>
+	<input id="username" type="text" maxlength="15" placeholder="Nom" required><br>
+	<input id="password" type="password" maxlength="80" placeholder="Mot de passe" required><br>
+	<input id="create" type="checkbox">Créer un nouveau compte</input><br>
+	<input type="submit" value="Se connecter"><a href="index.html">Continuer en tant qu'invité</a>
+</form>
+<div id="error"></div>
+</body>
+</html>

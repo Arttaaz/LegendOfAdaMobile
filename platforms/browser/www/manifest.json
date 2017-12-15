@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Legend of Ada",
+  "short_name": "Legend of Ada",
+  "version": "eu.legendofada.www",
+  "description": "An application to better learn mathematics",
+  "author": "Legend of Ada team",
+  "icons": [],
+  "start_url": "index.html"
+}
