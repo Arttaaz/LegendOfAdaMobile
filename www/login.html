@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts/session.js"></script>
+	<script src="scripts/login.js"></script>
+</head>
+<body class="login" onload="wake()">
+<header>
+	<p>
+		<a href="index.html">Menu Principal</a>
+		<img src="images/arrow.png" alt=">"></img>
+		<a href="login.html">Login</a>
+	</p>
+	<p id="user"></p>
+</header>
+<form action="index.html" onsubmit="return login()">
+	<h3>Connexion</h3>
+	<input id="username" type="text" maxlength="15" placeholder="Nom" required><br>
+	<input id="password" type="password" maxlength="80" placeholder="Mot de passe" required><br>
+	<input id="create" type="checkbox">Créer un nouveau compte</input><br>
+	<input type="submit" value="Se connecter"><a href="index.html">Continuer en tant qu'invité</a>
+</form>
+<div id="error"></div>
+</body>
+</html>
