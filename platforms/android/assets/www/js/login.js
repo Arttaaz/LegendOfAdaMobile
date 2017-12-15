@@ -26,7 +26,7 @@ function login() {
 		error.style.visibility = 'visible';
 		error.innerHTML = response.error;
 		return false;
-	}	
+	}
 
 	localStorage.setItem('session', request.responseText);
 

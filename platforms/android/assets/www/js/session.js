@@ -29,7 +29,7 @@ function wake() {
 
 	if(session == undefined) {
 		link.setAttribute('href', 'login.html');
-		avatar.setAttribute('src', 'images/logo.png');
+		avatar.setAttribute('src', '../images/logo.png');
 	} else {
 		link.setAttribute('href', 'login.html');
 		text = session.username + '  ';
