@@ -11,6 +11,7 @@
     <author href="http://legendofada.eu">
         Legend of Ada team
     </author>
+
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
