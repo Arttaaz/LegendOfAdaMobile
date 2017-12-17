@@ -20,8 +20,8 @@ header {
 #hamburger {
     position: relative;
     display: block;
-    height: 30%;
-    width: 20%;
+    height: 20%;
+    width: 15%;
 }
 
 #hamburger menu {
@@ -34,7 +34,7 @@ header {
     height:100%;
 }
 
-menu a {
+#hamburger menu a {
     display: block;
     text-decoration: none;
     color: black;
@@ -42,15 +42,19 @@ menu a {
     height: 10%;
 }
 
-header p {
+#user {
     display: inline-block;
     position: absolute;
     top:0px;
     right:0.5rem;
-    float: right;
-    text-align:right;
+    text-align: right;
 }
 
-header p img {
-    width: 21%;
+#user a {
+  vertical-align: -20px;
+}
+
+#user a img {
+    width: 17%;
+    float: right;
 }

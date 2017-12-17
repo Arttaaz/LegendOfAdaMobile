@@ -48,7 +48,12 @@ header p {
     top:0px;
     right:0.5rem;
     float: right;
-    text-align:right;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+header p a {
+  vertical-align: 100px;
 }
 
 header p img {
