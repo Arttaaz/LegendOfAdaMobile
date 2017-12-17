@@ -7,6 +7,7 @@ html {
 }
 body {
     margin: 0px;
+    background-color: #65A6E4;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     background-color: #65A6E4;
     position:fixed;
     top:0px;
+    border-bottom: solid #5C92C4 5px;
 }
 
 #hamburger {
@@ -23,10 +25,8 @@ header {
     width: 15%;
 }
 
-#hamburger menu {
-    display: none;
-    position: absolute;
-    background-color: #65A6E4;
+#hamburger button img {
+  width: 85%;
 }
 
 #hamburger button {
@@ -35,8 +35,13 @@ header {
   background-color: #5C92C4;
 }
 
-#hamburger button img {
-  width: 85%;
+#hamburger menu {
+    display: none;
+    position: absolute;
+    background-color: #5C92C4;
+    margin: 0px;
+    width: 300%;
+    text-align: center;
 }
 
 #hamburger menu a {
@@ -45,25 +50,36 @@ header {
     color: black;
     width: 50%;
     height: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight: bolder;
 }
 
 #user {
     display: inline-block;
     position: absolute;
     top:0px;
-    right:0.5rem;
+    right: 0px;
+    padding-right: 0.5rem;
     text-align: right;
-    margin-top: 8px;
+    margin-top: 0px;
+    padding-top: 8px;
+    background-color: #5C92C4;
+    width: 27%;
+    height: 89%;
 }
 
 #user a {
-  position: relative;
-  top: 20px;
-  text-decoration: none;
-  color: black;
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
 #user a img {
-    width: 17%;
+  margin-left: 10px;
+    width: 40%;
     float: right;
 }
