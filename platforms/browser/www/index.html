@@ -18,8 +18,13 @@
             });
         });
     </script>
+		<script type="text/javascript">
+			function bSize() {
+				body.style.backgroundSize = `${screen.width} ${screen.height}`;
+			}
+		</script>
 </head>
-<body class="index" onload="wake()">
+<body class="index" onload="wake();bSize();">
 <header>
     <nav id="hamburger">
     	<button><img src="images/hamburger.png" alt=""></button>
