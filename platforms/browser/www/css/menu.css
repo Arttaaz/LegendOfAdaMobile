@@ -1,17 +1,6 @@
 couleurs :  #65A6E4
             #5C92C4
 
-html {
-    width: 100%;
-    height: 100%;
-}
-body {
-    margin: 0px;
-    background-image: url(http://legendofada.eu/images/index-background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 header {
     display: block;
     width: 100%;
@@ -37,6 +26,10 @@ header {
   background-color: #5C92C4;
 }
 
+#hamburger button:active {
+  background-color: #6CB0F0;
+}
+
 #hamburger menu {
     display: none;
     position: absolute;
@@ -50,12 +43,15 @@ header {
     display: block;
     text-decoration: none;
     color: black;
-    width: 50%;
+    width: 100%;
     height: 10%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 40px;
     font-weight: bolder;
+}
+
+#hamburger menu a:active {
+  background-color: #6CB0F0;
 }
 
 #user {
@@ -78,6 +74,10 @@ header {
     text-decoration: none;
     color: black;
     font-weight: bolder;
+}
+
+#user a:active {
+  background-color: #6CB0F0;
 }
 
 #user a img {
