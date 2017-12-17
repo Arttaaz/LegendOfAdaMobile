@@ -52,11 +52,11 @@ header {
     display: block;
     text-decoration: none;
     color: black;
-    width: 91%;
+    width: 90%;
     height: 10%;
-    padding-left: 38px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 150%;
     font-weight: bolder;
 }
