@@ -21,7 +21,7 @@ header {
 #hamburger {
     position: relative;
     display: block;
-    width: 15%;
+    width: 10%;
 }
 
 #hamburger button img {
@@ -78,7 +78,7 @@ header {
 
 #user a {
     position: relative;
-    top: 20px;
+    top: 10px;
     text-decoration: none;
     color: black;
     font-weight: bolder;
@@ -90,6 +90,6 @@ header {
 
 #user a img {
   margin-left: 10px;
-    width: 40%;
+    width: 30%;
     float: right;
 }
