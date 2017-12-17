@@ -34,7 +34,7 @@ header {
     height:100%;
 }
 
-menu a {
+#hamburger menu a {
     display: block;
     text-decoration: none;
     color: black;
@@ -48,10 +48,12 @@ menu a {
     top:0px;
     right:0.5rem;
     text-align: right;
+    margin-top: 8px;
 }
 
 #user a {
-  vertical-align: -20px;
+  position: relative;
+  top: 20px;
 }
 
 #user a img {
