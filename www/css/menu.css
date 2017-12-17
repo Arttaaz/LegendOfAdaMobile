@@ -20,7 +20,6 @@ header {
 #hamburger {
     position: relative;
     display: block;
-    height: 20%;
     width: 15%;
 }
 
@@ -30,8 +29,13 @@ header {
 }
 
 #hamburger button {
-    padding: 30%;
-    height:100%;
+  border: none;
+  padding: 0px;
+  background-color: #5C92C4;
+}
+
+#hamburger button img {
+  width: 85%;
 }
 
 #hamburger menu a {
