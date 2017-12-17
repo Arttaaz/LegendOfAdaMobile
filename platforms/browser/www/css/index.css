@@ -4,3 +4,29 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.game {
+    display:inline-block;
+    width:40%;
+    margin:0;
+    margin-left:4%;
+    margin-right:4%;
+    border:5px solid #5C92C4;
+    overflow: hidden;
+}
+
+.game a {
+    text-align:center;
+    background-color: #5C92C4;
+    text-decoration: none;
+}
+
+.game img {
+    width:100%;
+}
+
+.game figcaption {
+    font-weight: bold;
+    color: black;
+    background-color: #5C92C4;
+}
