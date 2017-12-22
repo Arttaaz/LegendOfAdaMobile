@@ -1,0 +1,37 @@
+body {
+  background-image: url('../images/index-background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+form {
+    width:100%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+fieldset {
+    width:50%;
+    background-color: #65A6E4;
+    margin: auto;
+    border: solid #5C92C4 5px;
+}
+
+fieldset a, input[type="submit"] {
+    border: none;
+    text-decoration: none;
+    padding: 1%;
+    background-color: #5C92C4;
+    color:black;
+    font-size:1em;
+    margin-bottom:2%;
+}
+
+fieldset a:active, input[type="submit"]:active {
+    background-color: #6CB0F0;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 2%;
+}

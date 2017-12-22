@@ -81,16 +81,16 @@ header {
     height: 89%;
 }
 
+#user:active {
+    background-color: #6CB0F0;
+}
+
 #user a {
     position: relative;
     top: 10px;
     text-decoration: none;
     color: black;
     font-weight: bolder;
-}
-
-#user a:active {
-  background-color: #6CB0F0;
 }
 
 #user a img {

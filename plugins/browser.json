@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "eu.legendofada.www"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "eu.legendofada.www"
     }
   },
   "dependent_plugins": {}

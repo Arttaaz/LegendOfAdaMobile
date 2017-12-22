@@ -4,6 +4,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
     <name>Legend of Ada</name>
     <description>
         An application to better learn mathematics
@@ -11,7 +14,6 @@
     <author href="http://legendofada.eu">
         Legend of Ada team
     </author>
-
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -21,6 +23,11 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="res/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/android/icon-96-xhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="orientation" value="landscape" />
+    <preference name="FullScreen" value="true" />
 </widget>
