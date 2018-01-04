@@ -6,9 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
+    	<meta name="msapplication-tap-highlight" content="no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 </head>
 <body class="login" onload="wake();bSize();">
 	<header>
@@ -28,8 +27,8 @@
 	<form action="index.html" onsubmit="return login()">
 		<fieldset>
 			<h1>Connexion</h1>
-			<input id="username" type="text" maxlength="15" placeholder="Nom" required><br>
-			<input id="password" type="password" maxlength="80" placeholder="Mot de passe" required><br>
+			<input onclick="prompt(this)" id="username" type="text" maxlength="15" placeholder="Nom" required><br>
+			<input onclick="click()" onblur="blur()" id="password" type="password" maxlength="80" placeholder="Mot de passe" required><br>
 			<input id="create" type="checkbox">Créer un nouveau compte</input><br>
 			<input type="submit" value="Se connecter">
 			<br />
@@ -38,6 +37,8 @@
 	</form>
 	<div id="error"></div>
 
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/dialog.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="http://legendofada.eu/scripts/session.js"></script>
 	<script src="js/menu.js"></script>

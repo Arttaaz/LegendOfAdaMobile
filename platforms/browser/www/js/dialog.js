@@ -12,11 +12,10 @@ function prompt(e) {
     }
 }
 
-function clicked(e) {
-  document.getElementById('error').innerHTML = "<br /><br /><br /><br /><br /><br /><br /><br />";
-  document.getElementById('error').scrollIntoView(true);
+function click() {
+  document.getElementById('error').innerHTML = "<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />";
 }
 
-function blured() {
+function blur() {
   document.getElementById('error').innerHTML = "";
 }
