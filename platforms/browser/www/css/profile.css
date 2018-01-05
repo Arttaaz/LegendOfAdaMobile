@@ -1,0 +1,40 @@
+body {
+  background-image: url('../images/index-background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+    margin-top:5%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    border-top: 2px solid black;
+}
+ #avatar {
+     width: 70%;
+     border-radius: 50%;
+ }
+
+body > div > div {
+     display:flex;
+ }
+
+div > div > div {
+    width:100%;
+}
+
+div > div > div > a:first-of-type {
+    margin-top: 10%;
+}
+div > div > div > a {
+
+    display: block;
+    width:100%;
+    padding:3%;
+    text-align: center;
+}
+
+#achievements {
+    display: block;
+}

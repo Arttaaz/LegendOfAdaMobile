@@ -3,36 +3,46 @@
 <head>
 	<title>Menu</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="scripts/session.js"></script>
-	<script src="scripts/profile.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
-<body class="profile" onload="wake()">
-<header>
-	<p>
-		<a href="index.html">Menu Principal</a>
-		<img src="images/arrow.png" alt=">"></img>
-		<a href="profile.html">Profil</a>
-	</p>
-	<p id="user"></p>
-</header>
-<div>
-	<h1 id="username"></h1>
+<body class="profile" onload="wake();bSize();">
+	<header>
+	    <nav id="hamburger">
+	    	<button><img src="images/hamburger.png" alt=""></button>
+	        <!--::before-->
+	        <menu>
+				<a href="index.html">Accueil</a>
+	    		<a href="adventure.html">Aventure</a>
+	    		<a href="games.html">Mini-jeux</a>
+	    		<a href="courses.html">Cours</a>
+	        </menu>
+	        <!--::after-->
+	    </nav>
+		<p id="user"></p>
+	</header>
 	<div>
-		<img id="avatar"></img>
+		<h1 id="username"></h1>
 		<div>
-			<a href="index.html">À propos</a>
-			<a href="index.html">Proposition de contenu</a>
-			<a href="login.html">Déconnexion</a>
+			<img id="avatar"></img>
+			<div>
+				<a href="index.html">À propos</a>
+				<a href="index.html">Proposition de contenu</a>
+				<a href="login.html">Déconnexion</a>
+			</div>
+		</div>
+		<div id="achievements">
+			<div class="achievement">
+				<img src="http://api.legendofada.eu/avatar/sandrine.jpg"></img>
+				<h2>Sandrine</h2>
+				<p>Sandrinisez</p>
+			</div>
 		</div>
 	</div>
-	<div id="achievements">
-		<div class="achievement">
-			<img src="http://api.legendofada.eu/avatar/sandrine.jpg"></img>
-			<h2>Sandrine</h2>
-			<p>Sandrinisez</p>
-		</div>
-	</div>
-</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://legendofada.eu/scripts/profile.js"></script>
+	<script src="http://legendofada.eu/scripts/session.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
