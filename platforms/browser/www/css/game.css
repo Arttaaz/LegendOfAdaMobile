@@ -1,0 +1,38 @@
+body {
+    background-image: url('../images/index-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+rules {
+    display:block;
+    width:50%;
+    background-color: #65A6E4;
+    margin: auto;
+    border: solid #5C92C4 5px;
+}
+
+rules img {
+    width:100%;
+}
+
+rules h1 {
+    text-align: center;
+}
+
+rules a {
+    display: inline-block;
+    color:black;
+    background-color: #5C92C4;
+    padding:2%;
+    font-size: 1em;
+    width:45%;
+    margin-right:2%;
+    margin:0;
+    text-decoration: none;
+}
+
+rules a:last-of-type {
+    margin-right: 0;
+}

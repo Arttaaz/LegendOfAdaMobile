@@ -12,7 +12,11 @@ h1 {
     border-top: 2px solid black;
 }
  #avatar {
-     width: 50%;
+     margin-left:10%;
+     margin-top: 5%;
+     margin-right: 2%;
+     width: 25%;
+     height: 25%;
      border-radius: 50%;
  }
 
@@ -21,12 +25,12 @@ body > div > div {
  }
 
 div > div > div {
-    width:100%;
+    width:50%;
     overflow:hidden;
 }
 
 div > div > div > a:first-of-type {
-    margin-top: 10%;
+    margin-top: 15%;
 }
 div > div > div > a {
     color:black;
@@ -37,7 +41,7 @@ div > div > div > a {
     text-align: center;
     background:#5C92C4;
     text-decoration: none;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 div > div > div > a:last-of-type {
@@ -50,6 +54,7 @@ div > div > div > a:last-of-type {
 
 .achievement {
     border:5px solid #5C92C4;
+    background: #65A6E4;
     display: inline-block;
     width: 20%;
 }
