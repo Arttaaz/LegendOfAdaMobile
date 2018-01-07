@@ -12,3 +12,17 @@ div {
     border: solid #5C92C4 5px;
     text-align: center;
 }
+
+div h1 {
+    background:#5C92C4;
+}
+
+div a {
+    text-decoration: none;
+    color:black;
+}
+
+div li {
+    font-size: 1.3em;
+    margin-bottom: 1%;
+}
