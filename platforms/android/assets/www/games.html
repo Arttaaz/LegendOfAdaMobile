@@ -3,54 +3,61 @@
 <head>
 	<title>Mini-Jeux</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://legendofada.eu/scripts/session.js"></script>
-	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; script-src * ; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
-    --><meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/games.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body class="games" onload="wake()">
-<header>
-	<p>
-		<a href="index.html">Menu Principal</a>
-		<img src="images/arrow.png" alt=">"></img>
-		<a href="games.html">Mini-jeux</a>
-	</p>
-	<p id="user"></p>
-</header>
-<menu>
-	<figure class="game">
-		<a href="game.html?id=1">
-			<figcaption>Eratoaster</figcaption>
-			<img src="http://api.legendofada.eu/games/1/preview.png"/>
-		</a>
-	</figure>
-	<figure class="game">
-		<a href="game.html?id=1">
-			<figcaption>Eratoaster</figcaption>
-			<img src="http://api.legendofada.eu/games/1/preview.png"/>
-		</a>
-	</figure>
-	<figure class="game">
-		<a href="game.html?id=1">
-			<figcaption>Eratoaster</figcaption>
-			<img src="http://api.legendofada.eu/games/1/preview.png"/>
-		</a>
-	</figure>
-	<figure class="game">
-		<a href="game.html?id=1">
-			<figcaption>Eratoaster</figcaption>
-			<img src="http://api.legendofada.eu/games/1/preview.png"/>
-		</a>
-	</figure>
-	<figure class="game">
-		<a href="game.html?id=1">
-			<figcaption>Eratoaster</figcaption>
-			<img src="http://api.legendofada.eu/games/1/preview.png"/>
-		</a>
-	</figure>
-</menu>
+	<header>
+		<nav id="hamburger">
+			<button><img src="images/hamburger.png" alt=""></button>
+			<!--::before-->
+			<menu>
+				<a href="index.html">Accueil</a>
+				<a href="adventure.html">Aventure</a>
+				<a href="courses.html">Cours</a>
+			</menu>
+			<!--::after-->
+		</nav>
+		<p id="user"></p>
+	</header>
+	<menu id="gamelist">
+		<!--
+		<figure class="game">
+			<a href="game.html?id=1">
+				<figcaption>Eratoaster</figcaption>
+				<img src="http://api.legendofada.eu/games/1/preview.png"/>
+			</a>
+		</figure>
+		<figure class="game">
+			<a href="game.html?id=1">
+				<figcaption>Eratoaster</figcaption>
+				<img src="http://api.legendofada.eu/games/1/preview.png"/>
+			</a>
+		</figure>
+		<figure class="game">
+			<a href="game.html?id=1">
+				<figcaption>Eratoaster</figcaption>
+				<img src="http://api.legendofada.eu/games/1/preview.png"/>
+			</a>
+		</figure>
+		<figure class="game">
+			<a href="game.html?id=1">
+				<figcaption>Eratoaster</figcaption>
+				<img src="http://api.legendofada.eu/games/1/preview.png"/>
+			</a>
+		</figure>
+		<figure class="game">
+			<a href="game.html?id=1">
+				<figcaption>Eratoaster</figcaption>
+				<img src="http://api.legendofada.eu/games/1/preview.png"/>
+			</a>
+		</figure>
+	-->
+	</menu>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="http://legendofada.eu/scripts/session.js"></script>
+<script src="http://legendofada.eu/scripts/games.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
