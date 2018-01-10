@@ -3,47 +3,49 @@
 <head>
 	<title>Jeu</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://legendofada.eu/scripts/session.js"></script>
-	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; script-src * ; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
-    --><meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
 </head>
-<body class="game" onload="wake()">
-<header>
-	<p>
-		<a href="index.html">Menu Principal</a>
-		<img src="images/arrow.png" alt=">"></img>
-		<a href="game.html">Mini-jeu</a>
-	</p>
-	<p id="user"></p>
-</header>
-<a class="course" href="lesson.html?theme=1&lesson=1">Cours</a>
-<rules>
-	<h1>Eratoaster</h1>
-	<img src="http://api.legendofada.eu/games/1/preview.png"/>
-	<p>
-		Cliquez sur les toasts premiers pour annihiler Eratoaster l'omnipotent
-	</p>
-</rules>
-<social class="game">
-	<h1>Leaderboards</h1>
-	<table>
-		<tr><td>1</td><td>Bobby</td><td>1345</td></tr>
-		<tr><td>2</td><td>Annie</td><td>1227</td></tr>
-		<tr><td>3</td><td>Roger</td><td>1134</td></tr>
-		<tr><td>4</td><td>Bilel</td><td>1021</td></tr>
-		<tr><td>5</td><td>Sandrine</td><td>967</td></tr>
-		<tr><td>6</td><td>Gérard</td><td>943</td></tr>
-		<tr><td>7</td><td>Antoine</td><td>942</td></tr>
-		<tr><td>8</td><td>Alexandre</td><td>938</td></tr>
-		<tr><td>9</td><td>Alexis</td><td>936</td></tr>
-		<tr><td>10</td><td>Nathaniel</td><td>927</td></tr>
-		<tr><td></td><td>...</td><td></td></tr>
-	</table>
-</social>
-<a href="http://api.legendofada.eu/games/1"><footer class="play"><h1>Commencer</h1></footer></a>
+<body class="game" onload="wake();bSize();">
+	<header>
+		<nav id="hamburger">
+			<button><img src="images/hamburger.png" alt=""></button>
+			<!--::before-->
+			<menu id="nav">
+				<a href="index.html">Accueil</a>
+				<a href="adventure.html">Aventure</a>
+				<a href="games.html">Mini-jeux</a>
+				<a href="courses.html">Cours</a>
+			</menu>
+			<!--::after-->
+		</nav>
+		<p id="user"></p>
+	</header>
+	<rules>
+			<a id="course">Cours</a>
+			<a id="play">Commencer</a>
+	</rules>
+	<social class="game">
+		<h1>Leaderboards</h1>
+		<table>
+			<tr><td>1</td><td>Bobby</td><td>1345</td></tr>
+			<tr><td>2</td><td>Annie</td><td>1227</td></tr>
+			<tr><td>3</td><td>Roger</td><td>1134</td></tr>
+			<tr><td>4</td><td>Bilel</td><td>1021</td></tr>
+			<tr><td>5</td><td>Sandrine</td><td>967</td></tr>
+			<tr><td>6</td><td>Gérard</td><td>943</td></tr>
+			<tr><td>7</td><td>Antoine</td><td>942</td></tr>
+			<tr><td>8</td><td>Alexandre</td><td>938</td></tr>
+			<tr><td>9</td><td>Alexis</td><td>936</td></tr>
+			<tr><td>10</td><td>Nathaniel</td><td>927</td></tr>
+			<tr><td></td><td>...</td><td></td></tr>
+		</table>
+	</social>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="http://legendofada.eu/scripts/session.js"></script>
+	<script src="http://legendofada.eu/scripts/game.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
