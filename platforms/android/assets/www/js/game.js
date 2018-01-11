@@ -39,7 +39,7 @@ function specific() {
 	request.open('GET', 'http://api.legendofada.eu/games/index.php?id=' + queryURL.id);
 	request.send();
 
-	let request2 = new XMLHttpRequest();
+	/*let request2 = new XMLHttpRequest();
 
 	request2.onreadystatechange = function() {
 		if(request2.readyState == 4) {
@@ -54,7 +54,7 @@ function specific() {
 	}
 
 	request2.open('GET', 'http://api.legendofada.eu/social/scores.php?id=' + queryURL.id);
-	request2.send();
+	request2.send();*/
 }
 
 function play() {
