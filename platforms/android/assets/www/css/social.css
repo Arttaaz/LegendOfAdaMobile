@@ -5,10 +5,12 @@ body {
   background-attachment: fixed;
 }
 
-div {
+.index > div {
     width: 80%;
     text-align: center;
     margin:auto;
+    background-color: #65A6E4;
+    border:5px solid #5C92C4;
 }
 
 h2 {
@@ -17,9 +19,23 @@ h2 {
     border-bottom: solid black 2px;
 }
 
-div > div {
-    width: 70%;
-    padding: 2%;
-    background-color: #65A6E4;
-    border:5px solid #5C92C4;
+table {
+  width: 60%;
+  margin: auto;
+  border:5px solid #5C92C4;
+}
+
+th {
+  padding-bottom: 5%;
+}
+
+th, td {
+  margin-right: 5%;
+}
+
+button {
+  font-weight: bolder;
+  background-color: #5C92C4;
+  border: none;
+  padding: 1%;
 }
