@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 function bSize() {
 	document.getElementsByTagName("body")[0].style.backgroundSize = `${screen.width}px ${screen.height}px`;
-  document.getElementById('user').removeChild((document.getElementById('user').childNodes[1]));
+  document.getElementById('user').removeChild((document.getElementById('user').childNodes[1]));               //チキンナゲットが大好き
 }
 
 document.getElementById('user').addEventListener('click', function() {
