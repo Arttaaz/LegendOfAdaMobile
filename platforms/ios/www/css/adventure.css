@@ -1,0 +1,76 @@
+body {
+    background-image: url('../images/index-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#dialog {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+	bottom: 10vh;
+	width: 100vw;
+	height: 40vh;
+	font-size: 3vh;
+	background: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+	user-select: none;
+}
+
+#dialog > h2 {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	padding-left: 2vw;
+	margin-bottom: 2vh;
+	color: white;
+}
+
+#dialog > p {
+	padding-left: 2vw;
+	color: white;
+	width: 50vw;
+    font-size: 1.2em;
+}
+
+#avatar {
+  visibility: hidden;
+  position: fixed;
+  height: 90vh;
+  right: 0;
+  bottom: 0;
+}
+
+#hamburger2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#arrow {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    background-color: #5C92C4;
+}
+
+#arrow img {
+  width: 85%;
+}
+
+#worldlist {
+    position: relative;
+    background-color: #5C92C4;
+    margin:0;
+    padding:0;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+#worldlist a {
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-size: 1.2em;
+    font-weight: bolder;
+}

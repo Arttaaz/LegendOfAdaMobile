@@ -1,0 +1,24 @@
+body {
+    background-image: url('../images/index-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    width:90%;
+    margin:auto;
+}
+
+div > p {
+    display: inline-block;
+    border:5px solid #5C92C4;
+    background: #65A6E4;
+    padding: 2%;
+}
+
+div > p img {
+    display:block;
+    margin: auto;
+    margin-bottom: 5%;
+}

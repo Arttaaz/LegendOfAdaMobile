@@ -1,0 +1,546 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html * {
+	font-family: Montserrat, sans-serif;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+	background-image: url(images/index-background.jpg);
+	background-size: cover;
+	/* background-repeat: no-repeat; */
+}
+
+body > header {
+	position: fixed;
+	width: 100vw;
+	height: 10vh;
+	top: 0;
+	left: 0;
+	background-color: #65A6E4;
+	z-index: 1;
+	border: 1vh solid #5C92C4;
+	border-width: 0 0 1vh 0;
+	font-size: 4vh;
+}
+
+body > header > p {
+	padding: 2.8vh;
+}
+
+body > header img {
+	height: 4vh;
+}
+
+body > header > p#user {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #5C92C4;
+}
+
+body > header > p#user img {
+	height: 5.3vh;
+	vertical-align: bottom;
+}
+
+body.profile > div, body.courses > div, body.submit > div {
+	margin-top: 15vh;
+	margin-left: 19.5vw;
+	margin-right: 19.5vw;
+	width: 60vw;
+	background-color: #65A6E4;
+	border: 0.5vw solid #5C92C4;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+body.profile > div > h1, body.submit > div h1 {
+	text-align: center;
+	background-color: #5C92C4;
+}
+
+figure.game {
+	position: relative;
+	display: inline-block;
+}
+
+figure.game figcaption {
+	position: absolute;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.60);
+	opacity: 0;
+	padding: 0;
+	transition: padding 0.5s, opacity 0.5s;
+}
+
+figure.game:hover figcaption {
+	padding: 0.7em;
+	opacity: 1;
+}
+
+figure.game img {
+	width: 100%;
+}
+
+social {
+	position: fixed;
+	right: 0;
+	border: 1px solid black;
+	color: white;
+	background: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+	overflow-y: scroll;
+	visibility: hidden;
+}
+
+social > h1 {
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	color: white;
+}
+
+social table {
+	width: 100%;
+}
+
+social table td,
+social table th {
+	color: white;
+}
+
+body.submit #docs a,
+body.login > form input[type="submit"],
+body.login > form a {
+	border: none;
+	padding: 1%;
+	background-color: #5C92C4;
+	transition: 0.25s;
+}
+
+body.submit #docs a:hover,
+body.login > form input[type="submit"]:hover,
+body.login > form a:hover {
+	background-color: #9BE8E8;
+}
+
+/* login */
+
+body.login > form {
+	width: 40vw;
+	height: 40vh;
+	margin: 30vh 0 0 30vw;
+	background-color: #65A6E4;
+	border: 1vmin solid #5C92C4;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+body.login > form > h3 {
+	width: 100%;
+	background-color: #5C92C4;
+	margin-bottom: 2.5%;
+}
+
+body.login > form input {
+	margin: 2%;
+	font-size: 110%;
+}
+
+body.login > form input[type="text"],
+body.login > form input[type="password"] {
+	border: 0.5vh solid #5C92C4;
+	padding: 0.5vh;
+}
+
+div#error {
+	position: fixed;
+	font-size: 4vh;
+	bottom: 0;
+	padding: 2.8vh;
+	border: 0 solid red;
+	border-top-width: 1vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100vw;
+	text-align: center;
+	color: red;
+	visibility: hidden;
+}
+
+/* profile */
+
+body.profile > div > div {
+	display: flex;
+	padding-bottom: 5vh;
+}
+
+body.profile > div > div > div {
+	width: 100%;
+}
+
+body.profile > div > div > div > a {
+	display: block;
+	text-align: center;
+	font-size: 110%;
+	background-color: #5C92C4;
+	transition: 0.25s;
+	margin: 3%;
+	padding: 1%;
+}
+
+body.profile > div > div > div > a:hover {
+	background-color: #9BE8E8;
+}
+
+div#achievements {
+	display: block;
+}
+
+div.achievement {
+	height: 15vh;
+}
+
+div.achievement > img {
+	float: left;
+	height: 15vh;
+}
+
+div.achievement > h2 {
+	background-color: #5C92C4;
+	text-align: center;
+}
+
+/* index */
+
+menu.index {
+	position: fixed;
+	top: 25vh;
+	left: 35vw;
+	width: 30vw;
+	background-color: #65A6E4;
+	border: 1vh solid #5C92C4;
+}
+
+menu.index > img {
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+menu.index > p > a {
+	display: inline-block;
+	margin: 2%;
+	text-align: center;
+	width: 96%;
+	height: 15%;
+	background-color: #5C92C4;
+	font-size: 4vh;
+	transition: 0.25s;
+}
+
+menu.index > p > a:hover {
+	background-color: #9BE8E8;
+}
+
+social.trends {
+	position: fixed;
+	width: 25vw;
+	top: 15vh;
+	bottom: 15vh;
+	left: 0;
+	border-width: 1px 1px 1px 0;
+}
+
+social.trends > h1 {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+social.trends > div {
+	height: 100%;
+}
+
+social.trends > div > figure {
+	width: 49%;
+}
+
+social.index {
+	width: 25vw;
+	top: 15vh;
+	bottom: 15vh;
+}
+
+social.index > div {
+	height: 100%;
+}
+
+social.index table {
+	margin-bottom: 5%;
+}
+
+social.index div.friends,
+social.index div.guilds {
+	padding-bottom: 5%;
+}
+
+social.index div.request {
+	width: 100%;
+	text-align: center;
+}
+
+social.index div.request input {
+	width: 70%;
+	text-align: center;
+	border: none;
+	padding: 1%;
+	margin-bottom: 1%;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+social.index div.request button {
+	padding: 2%;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+/* adventure */
+
+body.adventure > menu {
+	position: fixed;
+	width: 100vw;
+	bottom: 0;
+	padding: 2vh;
+	font-size: 3vmin;
+	background-color: #65A6E4;
+	border: 0 solid #5C92C4;
+	border-top-width: 1vh;
+	text-align: center;
+	overflow: hidden;
+}
+
+body.adventure > #dialog {
+	position: fixed;
+	left: 0;
+	bottom: 10vh;
+	width: 100vw;
+	height: 40vh;
+	font-size: 3vh;
+	background: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+	visibility: hidden;
+	user-select: none;
+}
+
+body.adventure > #dialog > h2 {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	padding-left: 2vw;
+	margin-bottom: 2vh;
+	color: white;
+}
+
+body.adventure > #dialog > p {
+	padding-left: 2vw;
+	color: white;
+	width: 50vw;
+}
+
+body.adventure > #avatar {
+	position: fixed;
+	height: 90vh;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+}
+
+body.adventure > menu > a {
+	margin: 2.1vh;
+	padding: 2.1vh;
+	background-color: #5C92C4;
+}
+
+/* games */
+
+body.games > menu {
+	margin: 15vh 5vw 0 5vw;
+	background-color: rgba(92, 146, 196, 0.3);
+}
+
+body.games > menu > figure.game {
+	width: 33%;
+}
+
+/* game */
+
+a#course {
+	position: fixed;
+	font-size: 7vh;
+	padding: 1.5vh;
+	text-align: center;
+	border: 1px solid black;
+	/* border-radius: 0 2vh 2vh 0; */
+	top: 31.5vh;
+	left: 0;
+	width: 25vw;
+	background: rgba(0,0,0,0.6);
+	transition: 0.25s;
+	color: white;
+}
+
+a#course:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: black;
+}
+
+rules {
+	position: fixed;
+	top: 15vh;
+	left: 33vw;
+	width: 35vw;
+	height: 56vh;
+	text-align: center;
+	border: 1vh solid #5C92C4;
+	background-color: #65A6E4;
+}
+
+rules > h1 {
+	background-color: #5C92C4;
+}
+
+rules > img {
+	padding: 5%;
+	width: 50%;
+}
+
+social.game {
+	width: 25vw;
+	top: 15vh;
+	bottom: 27.5vh;
+	text-align: center;
+}
+
+footer#play {
+	position: fixed;
+	text-align: center;
+	border: 0.5vw solid #5C92C4;
+	border-radius: 4vh 4vh 0 0;
+	border-width: 0.5vw 0.5vw 0 0.5vw;
+	font-size: 5vh;
+	padding: 2.5vw;
+	width: 35vw;
+	height: 10vh;
+	bottom: 0;
+	left: 30.5vw;
+	background-color: #65A6E4;
+	transition: 0.25s;
+}
+
+footer#play:hover {
+	border-color: #3F77A8;
+	background-color: #4B8BC6;
+	cursor: pointer;
+}
+
+/* courses */
+
+body.courses > div > h1 {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	text-align: center;
+	background-color: #5C92C4;
+	transition: 0.25s;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+body.courses > div > h1:hover {
+	background-color: #9BE8E8;
+}
+
+body.courses > div > ol {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 4vmin;
+	text-align: center;
+}
+
+body.courses > div > ol > li:hover {
+	transition: 0.25s;
+}
+
+body.courses > div > ol > li:hover {
+	background-color: #9BE8E8;
+}
+
+body.courses > div.lesson {
+	text-align: center;
+}
+
+body.courses > div.lesson h2, body.courses > div.lesson h3 {
+	background-color: #5C92C4;
+}
+
+body.courses > div.lesson table {
+	text-align: center;
+	width: 80%;
+	border: 1vmin solid #5C92C4;
+	margin: 2% 10% 2% 10%;
+}
+
+body.courses > div.lesson > p.definition, body.courses > div.lesson > p.property {
+	margin: 1vmin;
+	padding: 1vmin;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 1vmin;
+}
+
+body.courses > div.lesson > p > dfn {
+	display: block;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+body.courses > div.lesson > p.property {
+	border: 1vmin solid #9BE8E8;
+}
+
+body.courses > div.lesson > p.property:hover {
+	background-color: #9BE8E8;
+}
+
+body.courses > div.lesson ul, body.courses > div.lesson li {
+	padding: 0.2vmin 10% 0.2vmin 10%;
+	margin: 0 1pt 0 1pt;
+	border-radius: 1vmin;
+}
+
+/* submit */
+
+body.submit > div p {
+	padding: 2%;
+}
+
+body.submit #docs {
+	padding: 2%;
+	text-align: center;
+	line-height: 50px;
+}

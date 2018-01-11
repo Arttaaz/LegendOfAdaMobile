@@ -1,0 +1,100 @@
+couleurs :  #65A6E4
+            #5C92C4
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0px;
+    padding-top: 10%;
+}
+
+header {
+    display: block;
+    width: 100%;
+    background-color: #65A6E4;
+    position:fixed;
+    top:0px;
+    border-bottom: solid #5C92C4 5px;
+    z-index: 1000;
+}
+
+#hamburger {
+    position: relative;
+    display: block;
+    width: 10%;
+}
+
+#hambutton img {
+  width: 85%;
+}
+
+#hambutton {
+  border: none;
+  padding: 0px;
+  background-color: #5C92C4;
+}
+
+#hambutton:active {
+  background-color: #6CB0F0;
+}
+
+#hamburger menu {
+    display: none;
+    position: absolute;
+    background-color: #5C92C4;
+    padding-left: 0px;
+    margin: 0px;
+    width: 301%;
+    /*text-align: left;*/
+}
+
+#hamburger menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 90%;
+    height: 10%;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+#hamburger menu a:active {
+  background-color: #6CB0F0;
+}
+
+#user {
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    padding-right: 0.5rem;
+    text-align: right;
+    margin-top: 0px;
+    padding-top: 8px;
+    background-color: #5C92C4;
+    width: 27%;
+    height: 89%;
+}
+
+#user:active {
+    background-color: #6CB0F0;
+}
+
+#user a {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#user a img {
+  margin-left: 10px;
+    width: 30%;
+    float: right;
+}
