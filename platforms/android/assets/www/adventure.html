@@ -12,12 +12,12 @@
 	<body class="adventure" onload="wake();bSize();">
 		<header>
 			<nav id="hamburger">
-				<button><img src="images/hamburger.png" alt=""></button>
+				<button id="hambutton"><img src="images/hamburger.png" alt=""></button>
 				<!--::before-->
 				<menu id="nav">
 					<a href="index.html">Accueil</a>
-					<a href="adventure.html">Aventure</a>
 					<a href="games.html">Mini-jeux</a>
+					<a href="courses.html">Cours</a>
 				</menu>
 				<!--::after-->
 			</nav>
@@ -31,12 +31,16 @@
 		<img id="worldmap" alt="Map du Monde" usemap="#map"></img>
 		<map name="map">
 		</map>
-		<menu></menu>
+		<nav id="hamburger2">
+			<button id="arrow"> <img src="images/arrow.png" alt=">"></button><!--
+			--><menu id="worldlist"></menu>
+		</nav>
 
 		<script type="text/javascript" src="cordova.js"></script>
 		<script src="http://legendofada.eu/scripts/session.js"></script>
 		<script src="js/adventure.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/menu.js"></script>
+		<script src="js/menuadv.js"></script>
 	</body>
 </html>

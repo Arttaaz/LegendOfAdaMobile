@@ -64,6 +64,7 @@ div.lesson > p > dfn {
 
 div.lesson > p.property {
 	border: 1vmin solid #9BE8E8;
+    background-color: #9BE8E8;
 }
 
 div.lesson > p.property:hover {

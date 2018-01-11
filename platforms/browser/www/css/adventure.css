@@ -35,6 +35,41 @@ body {
   visibility: hidden;
   position: fixed;
   height: 90vh;
-	right: 0;
-	bottom: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#hamburger2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#arrow {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    background-color: #5C92C4;
+}
+
+#arrow img {
+  width: 85%;
+}
+
+#worldlist {
+    position: relative;
+    display: inline-block;
+    background-color: #5C92C4;
+    margin:0;
+    padding:0;
+    padding-bottom: 3%;
+}
+
+#worldlist a {
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-size: 1.2em;
+    font-weight: bolder;
 }

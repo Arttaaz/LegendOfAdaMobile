@@ -20,19 +20,23 @@ h1 {
      border-radius: 50%;
  }
 
-body > div > div {
+ #info {
      display:flex;
+     border:5px solid #5C92C4;
+     background: #65A6E4;
+     width:90%;
+     margin:auto;
  }
 
-div > div > div {
+#info > div {
     width:50%;
     overflow:hidden;
 }
 
-div > div > div > a:first-of-type {
+#info > div > a:first-of-type {
     margin-top: 15%;
 }
-div > div > div > a {
+#info > div > a {
     color:black;
     font-weight: bolder;
     display: block;
@@ -44,14 +48,17 @@ div > div > div > a {
     margin-bottom: 1%;
 }
 
-div > div > div > a:last-of-type {
+#info > div > a:last-of-type {
     color:red;
 }
 
 #achievements {
     display: block;
 }
-
+#achievements > h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
 .achievement {
     border:5px solid #5C92C4;
     background: #65A6E4;
@@ -63,7 +70,7 @@ div > div > div > a:last-of-type {
     width: 100%;
 }
 
-.achievement h3 {
+.achievement h2 {
     margin-top: 0;
     text-align: center;
 }

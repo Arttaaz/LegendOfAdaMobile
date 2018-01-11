@@ -26,17 +26,17 @@ header {
     width: 10%;
 }
 
-#hamburger button img {
+#hambutton img {
   width: 85%;
 }
 
-#hamburger button {
+#hambutton {
   border: none;
   padding: 0px;
   background-color: #5C92C4;
 }
 
-#hamburger button:active {
+#hambutton:active {
   background-color: #6CB0F0;
 }
 
