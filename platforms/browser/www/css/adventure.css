@@ -4,3 +4,37 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+#dialog {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+	bottom: 10vh;
+	width: 100vw;
+	height: 40vh;
+	font-size: 3vh;
+	background: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+	user-select: none;
+}
+
+#dialog > h2 {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	padding-left: 2vw;
+	margin-bottom: 2vh;
+	color: white;
+}
+
+#dialog > p {
+	padding-left: 2vw;
+	color: white;
+	width: 50vw;
+}
+
+#avatar {
+  visibility: hidden;
+  position: fixed;
+  height: 90vh;
+	right: 0;
+	bottom: 0;
+}
