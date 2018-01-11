@@ -1,0 +1,14 @@
+body {
+    background-image: url('../images/index-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#dialog {
+  visibility: hidden;
+}
+
+#avatar {
+  visibility: hidden;
+}

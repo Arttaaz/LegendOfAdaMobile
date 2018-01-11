@@ -8,9 +8,8 @@ body {
 .game {
     display:inline-block;
     width:40%;
-    margin:auto;
+    margin-left:1%;
     border:5px solid #5C92C4;
-    overflow: hidden;
 }
 
 .game a {

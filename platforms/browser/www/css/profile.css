@@ -1,0 +1,69 @@
+body {
+  background-image: url('../images/index-background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+    margin-top:5%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    border-top: 2px solid black;
+}
+ #avatar {
+     margin-left:10%;
+     margin-top: 5%;
+     margin-right: 2%;
+     width: 25%;
+     height: 25%;
+     border-radius: 50%;
+ }
+
+body > div > div {
+     display:flex;
+ }
+
+div > div > div {
+    width:50%;
+    overflow:hidden;
+}
+
+div > div > div > a:first-of-type {
+    margin-top: 15%;
+}
+div > div > div > a {
+    color:black;
+    font-weight: bolder;
+    display: block;
+    width:100%;
+    padding:3%;
+    text-align: center;
+    background:#5C92C4;
+    text-decoration: none;
+    margin-bottom: 1%;
+}
+
+div > div > div > a:last-of-type {
+    color:red;
+}
+
+#achievements {
+    display: block;
+}
+
+.achievement {
+    border:5px solid #5C92C4;
+    background: #65A6E4;
+    display: inline-block;
+    width: 20%;
+}
+
+.achievement img {
+    width: 100%;
+}
+
+.achievement h3 {
+    margin-top: 0;
+    text-align: center;
+}
