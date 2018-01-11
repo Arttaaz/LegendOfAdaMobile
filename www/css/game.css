@@ -41,7 +41,8 @@ social h1 {
 social table {
     margin: auto;
     width:70%;
-     border: 1px solid black;
+     border: solid #5C92C4 5px;
      text-align: center;
      margin-bottom: 1%;
+     background-color: #65A6E4;
 }

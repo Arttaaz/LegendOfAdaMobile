@@ -67,10 +67,6 @@ div.lesson > p.property {
     background-color: #9BE8E8;
 }
 
-div.lesson > p.property:hover {
-	background-color: #9BE8E8;
-}
-
 div.lesson ul, body.courses > div.lesson li {
 	padding: 0.2vmin 10% 0.2vmin 10%;
 	margin: 0 1pt 0 1pt;
