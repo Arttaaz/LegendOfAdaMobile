@@ -25,23 +25,25 @@
 			<p id="user"></p>
 	    </header>
 
-        <div id="friends">
+        <div class="friends">
             <h2>Amis</h2>
             <div>
-                <input type="text" name="friendname" value="" placeholder="Entrez le nom d'un ami">
-                <button type="button" name="addfriend">Ajouter</button>
+                <input id="friendname" type="text" name="friendname" value="" placeholder="Entrez le nom d'un ami">
+                <button onclick="addFriend()">Ajouter</button>
             </div>
         </div>
-        <div id="guilds">
+        <div class="guilds">
             <h2>Guildes</h2>
             <div>
                 <input type="text" name="friendname" value="" placeholder="Entrez le nom d'une guilde">
                 <button type="button" name="addguild">Rejoindre</button>
+                <button type="button" name="button">Créer une guilde</button>
             </div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
 		<script src="http://legendofada.eu/scripts/session.js"></script>
+    <script src="http://legendofada.eu/scripts/index.js"></script>
 		<script src="js/social.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/menu.js"></script>
