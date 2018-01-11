@@ -1,0 +1,25 @@
+body {
+  background-image: url('../images/index-background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+
+h2 {
+    width: 100%;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+div > div {
+    width: 70%;
+    padding: 2%;
+    background-color: #65A6E4;
+    border:5px solid #5C92C4;
+}

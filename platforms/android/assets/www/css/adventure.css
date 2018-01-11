@@ -35,7 +35,7 @@ body {
 #avatar {
   visibility: hidden;
   position: fixed;
-  height: 90vh;
+  height: 80vh;
   right: 0;
   bottom: 0;
 }

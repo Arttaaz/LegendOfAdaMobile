@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aventure</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/adventure.css">
+		<meta name="format-detection" content="telephone=no">
+	  <meta name="msapplication-tap-highlight" content="no">
+	  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	</head>
+	<body class="adventure" onload="wake();bSize();">
+		<header>
+			<nav id="hamburger">
+				<button id="hambutton"><img src="images/hamburger.png" alt=""></button>
+				<!--::before-->
+				<menu id="nav">
+					<a href="index.html">Accueil</a>
+					<a href="games.html">Mini-jeux</a>
+					<a href="courses.html">Cours</a>
+				</menu>
+				<!--::after-->
+			</nav>
+			<p id="user"></p>
+	</header>
+		<div id="dialog">
+			<h2></h2>
+			<p></p>
+		</div>
+		<img id="avatar" alt=""></img>
+		<img id="worldmap" alt="Map du Monde" usemap="#map"></img>
+		<map name="map">
+		</map>
+		<nav id="hamburger2">
+			<button id="arrow"> <img src="images/arrow.png" alt=">"></button><!--
+			--><menu id="worldlist"></menu>
+		</nav>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script src="http://legendofada.eu/scripts/session.js"></script>
+		<script src="js/adventure.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/menuadv.js"></script>
+	</body>
+</html>

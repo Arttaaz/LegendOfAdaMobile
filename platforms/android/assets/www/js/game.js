@@ -27,7 +27,7 @@ function specific() {
 				preview.setAttribute('src', 'http://api.legendofada.eu/games/'
 					+ response.id + '/preview.png');
 				description.appendChild(document.createTextNode(response.description));
-				footer.href = 'http://api.legendofada.eu/games/' + response.id;
+				footer.setAttribute('href', "javascript:function(){cordova.inAppBrowser.open('http://api.legendofada.eu/games/' + response.id, _self, no);}");
 			} else {
 				window.location.assign('index.html');
 			}

@@ -12,17 +12,21 @@
   "dependencies": {
     "cordova-android": "^6.3.0",
     "cordova-browser": "^5.0.1",
+    "cordova-ios": "^4.5.4",
     "cordova-plugin-dialogs": "^1.3.4",
+    "cordova-plugin-inappbrowser": "^2.0.1",
     "cordova-plugin-whitelist": "^1.3.3"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-dialogs": {}
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "android",
-      "browser"
+      "browser",
+      "ios"
     ]
   }
 }

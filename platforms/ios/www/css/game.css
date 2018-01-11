@@ -1,0 +1,48 @@
+body {
+    background-image: url('../images/index-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+rules {
+    display:block;
+    width:60%;
+    background-color: #65A6E4;
+    margin: auto;
+    border: solid #5C92C4 5px;
+    text-align: center;
+}
+
+rules img {
+    width:60%;
+}
+
+rules a {
+    display: inline-block;
+    color:black;
+    background-color: #5C92C4;
+    padding:4%;
+    font-size: 1em;
+    width:40.45%;
+    margin-right:2%;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+rules a:last-of-type {
+    margin-right: 0;
+}
+
+social h1 {
+    border-bottom: 2px solid black;
+}
+
+social table {
+    margin: auto;
+    width:70%;
+     border: solid #5C92C4 5px;
+     text-align: center;
+     margin-bottom: 1%;
+     background-color: #65A6E4;
+}
