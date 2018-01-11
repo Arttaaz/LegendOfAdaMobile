@@ -35,7 +35,11 @@ body {
 #avatar {
   visibility: hidden;
   position: fixed;
+<<<<<<< HEAD
   height: 90vh;
+=======
+  height: 80vh;
+>>>>>>> 062cdd15430a6375b4bc8f10925edbd8feba8240
   right: 0;
   bottom: 0;
 }

@@ -28,8 +28,12 @@ function specific() {
 				preview.setAttribute('src', 'http://api.legendofada.eu/games/'
 					+ response.id + '/preview.png');
 				description.appendChild(document.createTextNode(response.description));
+<<<<<<< HEAD
 
 				footer.href = "javascript:play()";
+=======
+				footer.setAttribute('href', "javascript:function g(){cordova.inAppBrowser.open('http://api.legendofada.eu/games/' + response.id, _self, no);}");
+>>>>>>> 062cdd15430a6375b4bc8f10925edbd8feba8240
 			} else {
 				window.location.assign('index.html');
 			}
