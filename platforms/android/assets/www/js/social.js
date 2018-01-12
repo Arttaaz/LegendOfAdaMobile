@@ -4,7 +4,7 @@ function typing(e) {
     navigator.notification.prompt("Entrez le nom de l'ami", onPrompt, '');
   }
   else if(e.name == "guild") {
-    navigator.notification.prompt("Entrez le nom de l'ami", onPrompt, '');
+    navigator.notification.prompt("Entrez le nom de la guilde", onPrompt, '');
   }
 
   function onPrompt(results) {

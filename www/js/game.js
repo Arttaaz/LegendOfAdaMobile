@@ -39,22 +39,30 @@ function specific() {
 	request.open('GET', 'http://api.legendofada.eu/games/index.php?id=' + queryURL.id);
 	request.send();
 
-	/*let request2 = new XMLHttpRequest();
+	let request2 = new XMLHttpRequest();
 
 	request2.onreadystatechange = function() {
 		if(request2.readyState == 4) {
 			if(request2.status == 200) {
-				let answer = JSON.parse(request.responseText);
-				console.log(answer);
-			}
-			else if(request2.status == 404){
-				console.log("nope");
+				let answer = JSON.parse(request2.responseText);
+				let board = document.getElementsByTagName('table')[0];
+				for (var i = 0; i < answer.length; i++) {
+					let boardRow = document.createElement('tr');
+					let boardName = document.createElement('td');
+					let boardValue = document.createElement('td');
+					boardName.appendChild(document.createTextNode(answer[i].username));
+					boardValue.appendChild(document.createTextNode(answer[i].value));
+					boardRow.appendChild(boardName);
+					boardRow.appendChild(boardValue);
+					board.appendChild(boardRow);
+				}
+
 			}
 		}
 	}
 
-	request2.open('GET', 'http://api.legendofada.eu/social/scores.php?id=' + queryURL.id);
-	request2.send();*/
+	request2.open('GET', 'http://api.legendofada.eu/games/boards.php?game=' + queryURL.id);
+	request2.send();
 }
 
 function play() {
