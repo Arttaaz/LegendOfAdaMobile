@@ -27,31 +27,35 @@
       <social class="index">
       	<div>
       		<div class="friends">
+            <h2>Amis</h2>
       			<table>
-      				<tr><th>Amis</th></tr>
+      				<tr><th>Amis</th><th>Statut</th><th>Quitter</th></tr>
       			</table>
       			<div class="request">
-      				<input id="friendname" type="text" maxlength="32" placeholder="Nom" required><br>
+              <br />
+      				<input id="friendname" onclick="typing(this)" name="friend" type="text" maxlength="32" placeholder="Nom" required><br>
       				<button onclick="addFriend()">Ajouter un ami</button>
       			</div>
       		</div>
       		<div class="guilds">
+            <h2>Guildes</h2>
       			<table>
-      				<tr><th>Guildes</th></tr>
+      				<tr><th>Guildes</th><th>Chef</th></tr>
       			</table>
       			<div class="request">
-      				<input id="guildname" type="text" maxlength="32" placeholder="Guilde" required><br>
-      				<button>Joindre une Guilde</button>
-      				<button>Créer une guilde</button>
+              <br />
+      				<input id="guildname" onclick="typing(this)" name="guild" type="text" maxlength="32" placeholder="Guilde" required><br>
+              <button onclick="actionGuild('join')">Joindre une guilde</button>
+      				<button onclick="actionGuild('add')">Créer une guilde</button>
       			</div>
       		</div>
       	</div>
       </social>
     <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="http://legendofada.eu/scripts/session.js"></script>
     <script src="http://legendofada.eu/scripts/index.js"></script>
-		<script src="js/social.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/social.js"></script>
 		<script src="js/menu.js"></script>
     </body>
 </html>
